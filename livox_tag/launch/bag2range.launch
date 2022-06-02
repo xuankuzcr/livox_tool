@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+<!-- rosbag folder -->
+<param name="input_bag_path" value="/home/chunran/Downloads/"/>
+<!-- path to save new pcd files -->
+<param name="output_pcd_path" value="/home/chunran/zcr/data/pcd/"/>
+<!-- path to save new range files -->
+<param name="output_range_path" value="/home/chunran/zcr/data/depth1/"/>
+<!-- path to save new range files -->
+<param name="output_range_path2" value="/home/chunran/zcr/data/depth2/"/>
+
+<param name="threshold_lidar" type="int" value="1"/>
+
+<!-- the number of the rosbag -->
+<param name="data_num" type="int" value="1"/>
+
+<node pkg="livox_tag" name="livox_tag" type="livox_tag_node" output="screen"/>
+</launch>
